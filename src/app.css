@@ -1,0 +1,90 @@
+.app {
+    --bg-color-1: #9db3ed;
+    --bg-color-2: #f9f9f9;
+    --text-color-1: #0b1537;
+    --text-color-2: #636363;
+}
+
+.app[data-theme="dark"] {
+    --bg-color-1: #172d67;
+    --bg-color-2: #050c26;
+    --text-color-1: #fbfcfc;
+    --text-color-2: #bbbcbc;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.15);
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: gray;
+}
+.app {
+    background-color: #2a6c84;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.app_calculator {
+    height: 500px;
+    width: 280px;
+    border-radius: 30px;
+    box-shadow: 1px -1px 20px rgba(0,0,0,0.15);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.app_calculator_navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    min-height: 40px;
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.app_calculator_navbar img {
+    height: 20px;
+    width: 20px;
+    transition: all 300ms;
+}
+
+.app_calculator_navbar_toggle {
+    height: 15px;
+    width: 30px;
+    top: 3px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 40px 80px rgba(0,0,0,0.15);
+
+}
+
+.app_calculator_navbar_toggle_circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: 300ms;
+}
+
+.app_calculator_navbar_toggle_circle_active {
+    margin-left: 15px;
+}
