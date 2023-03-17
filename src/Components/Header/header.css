@@ -16,6 +16,7 @@
 .header_expression {
     overflow-x: scroll;
     width: 100%;
+    min-height: 30px;
 }
 
 .header_expression p {
@@ -27,5 +28,6 @@
 
 .header_result {
     font-weight: 700;
+    min-height: 30px;
     font-size: 1.5rem !important;
 }
